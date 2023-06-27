@@ -16,21 +16,43 @@
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "require": "./dist/index.cjs",
-      "import": "./dist/index.mjs"
+      "require": "./dist/index.cjs.js",
+      "import": "./dist/index.esm.mjs"
     }
   },
-  "main": "dist/index.cjs",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
+  "main": "./dist/index.cjs.js",
+  "module": "./dist/index.esm.mjs",
+  "browser": "./dist/browser.esm.mjs",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist/",
     "grammars/",
     "themes/"
   ],
   "scripts": {
-    "test": "echo \"Happy hacking\" && 💙"
+    "build": "rollup -c",
+    "watch": "rollup -c -w",
+    "test": "vitest",
+    "typecheck": "vitest typecheck",
+    "regenerate": "node ./scripts/update.mjs"
   },
-  "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "@babel/core": "^7.19.0",
+    "@rollup/plugin-babel": "^5.3.1",
+    "@rollup/plugin-commonjs": "^22.0.2",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^14.0.0",
+    "@rollup/plugin-replace": "^5.0.1",
+    "@rollup/pluginutils": "^5.0.2",
+    "@types/react": "^18.2.14",
+    "consolji": "^0.1.5",
+    "jsonc-parser": "^3.2.0",
+    "node-fetch": "^3.3.1",
+    "rollup": "^2.79.0",
+    "rollup-plugin-dts": "^5.1.1",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "tslib": "^2.6.0",
+    "vscode-oniguruma": "^1.7.0",
+    "vscode-textmate": "^7.0.0"
+  }
 }
