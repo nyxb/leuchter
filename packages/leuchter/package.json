@@ -1,0 +1,36 @@
+{
+  "name": "leuchter",
+  "version": "0.0.0",
+  "description": "",
+  "author": "Dennis Ollhoff (nyxb) <contact@nyxb.email>",
+  "license": "MIT",
+  "homepage": "https://💻nyxb.ws",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nyxb/leuchter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nyxb/leuchter/issues"
+  },
+  "keywords": [],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/",
+    "grammars/",
+    "themes/"
+  ],
+  "scripts": {
+    "test": "echo \"Happy hacking\" && 💙"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

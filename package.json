@@ -1,0 +1,30 @@
+{
+  "name": "leuchter-workspace",
+  "version": "0.0.0",
+  "private": true,
+  "author": "Dennis Ollhoff (nyxb) <contact@nyxb.email>",
+  "license": "MIT",
+  "homepage": "https://💻nyxb.ws",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nyxb/leuchter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nyxb/leuchter/issues"
+  },
+  "keywords": [],
+  "files": [],
+  "scripts": {
+    "test": "echo \"Happy hacking\" && 💙"
+  },
+  "devDependencies": {
+    "@nyxb/eslint-config": "^0.1.2",
+    "@nyxb/nyxi": "^0.0.31",
+    "@vitest/coverage-c8": "^0.32.2",
+    "dynot": "^0.1.8",
+    "eslint": "^8.43.0",
+    "pnpm": "^8.6.5",
+    "typescript": "^5.1.3",
+    "vitest": "^0.32.2"
+  }
+}
