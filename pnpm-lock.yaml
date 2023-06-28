@@ -105,6 +105,16 @@ importers:
         specifier: ^7.0.0
         version: 7.0.0
 
+  test:
+    dependencies:
+      leuchter:
+        specifier: workspace:*
+        version: link:../packages/leuchter
+    devDependencies:
+      consolji:
+        specifier: ^0.1.5
+        version: 0.1.5
+
 packages:
 
   /@ampproject/remapping@2.2.1:

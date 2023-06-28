@@ -15,6 +15,7 @@
   "keywords": [],
   "files": [],
   "scripts": {
+    "dev": "pnpm -r --filter leuchter run watch & pnpm -r --filter leuchter-web run dev",
     "build:package": "pnpm -r --filter leuchter run build",
     "test:package": "pnpm -r --filter leuchter run test"
   },
