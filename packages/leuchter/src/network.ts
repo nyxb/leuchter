@@ -6,15 +6,15 @@ const LEUCHTER_VERSION = '__LEUCHTER_VERSION__'
 // /themes/${name}.json
 export async function fetchJSON(endpoint: string) {
    if (typeof fetch === 'function') {
-      // console.log(`using fetch`, `https://leuchter.nyxb.xyz/${endpoint}.json`);
-      const r = await fetch(`https://leuchter.nyxb.xyz/${endpoint}.json`)
+      // console.log(`using fetch`, `https://leuchter.nyxb.zip/${endpoint}.json`);
+      const r = await fetch(`https://leuchter.nyxb.zip/${endpoint}.json`)
       return await r.json()
    }
-   // console.log(`using https`, `https://leuchter.nyxb.xyz/${endpoint}.json`);
+   // console.log(`using https`, `https://leuchter.nyxb.zip/${endpoint}.json`);
 
    const https = await import('node:https')
    const options = {
-      host: 'leuchter.nyxb.xyz',
+      host: 'leuchter.nyxb.zip',
       path: `/${endpoint}.json`,
       method: 'GET',
    }
