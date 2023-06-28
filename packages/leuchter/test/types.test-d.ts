@@ -1,7 +1,7 @@
 import { expectTypeOf, test } from 'vitest'
 import type {
-   AnnotatedLighterResult,
-   LighterResult,
+   AnnotatedLeuchterResult,
+   LeuchterResult,
 } from '../src'
 import {
    highlight,
@@ -25,8 +25,8 @@ test('highlight sync types', async () => {
       },
    )
 
-   expectTypeOf(notAnnotatedResult).toMatchTypeOf<LighterResult>()
-   expectTypeOf(annotatedResult).toMatchTypeOf<AnnotatedLighterResult>()
+   expectTypeOf(notAnnotatedResult).toMatchTypeOf<LeuchterResult>()
+   expectTypeOf(annotatedResult).toMatchTypeOf<AnnotatedLeuchterResult>()
 })
 
 test('highlight types', async () => {
@@ -45,6 +45,6 @@ test('highlight types', async () => {
       },
    )
 
-   expectTypeOf(notAnnotatedResult).toMatchTypeOf<LighterResult>()
-   expectTypeOf(annotatedResult).toMatchTypeOf<AnnotatedLighterResult>()
+   expectTypeOf(notAnnotatedResult).toMatchTypeOf<LeuchterResult>()
+   expectTypeOf(annotatedResult).toMatchTypeOf<AnnotatedLeuchterResult>()
 })
