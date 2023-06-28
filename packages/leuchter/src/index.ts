@@ -36,7 +36,7 @@ import {
 
 interface Config { scopes?: boolean }
 type AnnotatedConfig = { annotations: Annotation[] } & Config
-interface LighterResult {
+interface LeuchterResult {
    lines: Token[][]
    lang: LanguageName
    style: {
@@ -44,7 +44,7 @@ interface LighterResult {
       background: string
    }
 }
-interface AnnotatedLighterResult {
+interface AnnotatedLeuchterResult {
    lines: Lines
    lang: LanguageName
    style: {
@@ -67,8 +67,8 @@ export type {
    TokenGroup,
    Tokens,
    Token,
-   LighterResult,
-   AnnotatedLighterResult,
+   LeuchterResult,
+   AnnotatedLeuchterResult,
 }
 
 function isAnnotatedConfig(
@@ -86,13 +86,13 @@ export async function highlight(
    lang: LanguageAlias,
    themeOrThemeName?: Theme,
    config?: Config
-): Promise<LighterResult>
+): Promise<LeuchterResult>
 export async function highlight(
    code: string,
    lang: LanguageAlias,
    themeOrThemeName: Theme,
    config: AnnotatedConfig
-): Promise<AnnotatedLighterResult>
+): Promise<AnnotatedLeuchterResult>
 export async function highlight(
    code: string,
    lang: LanguageAlias,
@@ -116,13 +116,13 @@ export function highlightSync(
    lang: LanguageAlias,
    themeOrThemeName?: Theme,
    config?: Config
-): LighterResult
+): LeuchterResult
 export function highlightSync(
    code: string,
    lang: LanguageAlias,
    themeOrThemeName: Theme,
    config: AnnotatedConfig
-): AnnotatedLighterResult
+): AnnotatedLeuchterResult
 export function highlightSync(
    code: string,
    lang: LanguageAlias,
@@ -208,4 +208,4 @@ export function getThemeColorsSync(themeOrThemeName: Theme) {
    return getAllThemeColors(theme)
 }
 
-export type LighterColors = ReturnType<typeof getThemeColors>
+export type LeuchterColors = ReturnType<typeof getThemeColors>
