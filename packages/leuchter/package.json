@@ -18,7 +18,9 @@
       "types": "./dist/index.d.ts",
       "require": "./dist/index.cjs.js",
       "import": "./dist/index.esm.mjs"
-    }
+    },
+    "./themes/*": "./themes/*",
+    "./grammars/*": "./grammars/*"
   },
   "main": "./dist/index.cjs.js",
   "module": "./dist/index.esm.mjs",

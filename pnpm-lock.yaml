@@ -36,7 +36,7 @@ importers:
   apps/web:
     dependencies:
       leuchter:
-        specifier: workspace:*
+        specifier: ^0.0.1
         version: link:../../packages/leuchter
       next:
         specifier: ^13.0.7
