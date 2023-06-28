@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v0.0.2
+
+[compare changes](https://github.com/nyxb/leuchter/compare/v0.0.1...v0.0.2)
+
+
+### 🏡 Chore
+
+  - **web): remove unused files app-build-manifest.json and build-manifest.json 📦 chore(web): update leuchter dependency to version ^0.0.1 📦 chore(leuchter:** Add themes and grammars directories to package.json files field ([0d40260](https://github.com/nyxb/leuchter/commit/0d40260))
+
+### ❤️  Contributors
+
+- Nyxb <contact@nyxb.xyz>
+
 ## v0.0.1
 
 
