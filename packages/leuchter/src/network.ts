@@ -1,5 +1,5 @@
 // this will be replaced at build time with the version from package json
-const LIGHTER_VERSION = '__LIGHTER_VERSION__'
+const LEUCHTER_VERSION = '__LEUCHTER_VERSION__'
 
 // endpoints:
 // /grammars/${name}.json
