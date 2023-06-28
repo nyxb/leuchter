@@ -17,7 +17,7 @@ export async function readJSON(folder: string, filename: string) {
    }
    catch (e) {
       // console.log("using resolve");
-      const indexFile = resolveSync('@code-hike/lighter', { basedir: __dirname })
+      const indexFile = resolveSync('leuchter', { basedir: __dirname })
       const folderPath = path.resolve(indexFile, '..', '..', folder)
       const filepath = path.resolve(folderPath, filename)
       return JSON.parse(await fs.readFile(filepath, 'utf8'))
