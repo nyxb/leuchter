@@ -9,7 +9,7 @@ import { arraybuffer } from './load-buffer'
 const pkg = require('./package.json')
 
 const plugins = [
-   replace({ __LIGHTER_VERSION__: `${pkg.version}`, preventAssignment: false }),
+   replace({ __LEUCHTER_VERSION__: `${pkg.version}`, preventAssignment: false }),
    json(),
    nodeResolve(),
    typescript({

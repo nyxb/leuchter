@@ -15,7 +15,8 @@
   "keywords": [],
   "files": [],
   "scripts": {
-    "test": "echo \"Happy hacking\" && 💙"
+    "build:package": "pnpm -r --filter leuchter run build",
+    "test:package": "pnpm -r --filter leuchter run test"
   },
   "devDependencies": {
     "@nyxb/eslint-config": "^0.1.2",
