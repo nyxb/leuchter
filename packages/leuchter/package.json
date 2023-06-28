@@ -30,12 +30,14 @@
     "themes/"
   ],
   "scripts": {
+    "prepublishOnly": "nyxr build",
     "build": "rollup -c",
     "watch": "rollup -c -w",
     "test": "vitest run -u",
     "test:c8": "vitest run --coverage",
     "typecheck": "vitest typecheck",
-    "regenerate": "node ./scripts/update.mjs"
+    "regenerate": "node ./scripts/update.mjs",
+    "release": "nyxlx changelogen@latest --release && pnpm publish"
   },
   "devDependencies": {
     "@babel/core": "^7.19.0",
