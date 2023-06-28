@@ -1,0 +1,12 @@
+{
+  "name": "leuchter-test",
+  "type": "module",
+  "version": "0.1.36",
+  "private": true,
+  "dependencies": {
+    "leuchter": "workspace:*"
+  },
+  "devDependencies": {
+    "consolji": "^0.1.5"
+  }
+}
