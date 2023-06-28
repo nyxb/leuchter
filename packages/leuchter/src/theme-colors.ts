@@ -104,8 +104,8 @@ const defaults = {
       light: '#fffffe',
       hc: '#fffffe',
    },
-   // this aren't from vscode, they are specific to lighter
-   'lighter.inlineBackground': {
+   // this aren't from vscode, they are specific to leuchter
+   'leuchter.inlineBackground': {
       dark: [transparent, 'editor.background', 0.9],
       light: [transparent, 'editor.background', 0.9],
    },
