@@ -1,0 +1,6 @@
+{
+   "extends": ["@nyxb"],
+   "rules": {
+      "no-console": 0
+   }
+}
